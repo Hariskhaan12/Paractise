@@ -1,0 +1,138 @@
+/* .parent{
+    background-color: blue;
+    height: 400px;
+    width: 400px;
+}
+
+/* .child{
+    background-color: red;
+    height: 50%;
+    width: 50%;
+    /* // transfrom keyword is used to tell only animate that transform key not everything */ 
+     /* transition: transform 1s;  */
+     /* transition: transform 1s ease-in-out 1s;   */
+ 
+/* two way to animate something 1) transition 2) animation */
+/*.parent:hover .child{
+    /* transform: translateX(100%); */
+
+    /* // more GOOD */
+
+    /* // second way to use animation */
+    /* animation: left-to-right 1s ease-in-out ; */
+    /* animation: left-to-right 1s ease-in-out forwards 3 alternate; }*/
+
+
+    /* ------------------------------------------------------ */
+/* .child{
+    background-color: red;
+    width: 50%;
+    height: 50%;
+    animation:left-to-right 1s ease-in-out forwards infinite alternate
+}
+
+.parent:hover .child{
+    animation-play-state: paused;
+}
+@keyframes left-to-right{
+    0%{
+        background-color: red;
+        transform: translateX(0);
+    }
+    33%{
+        transform: translateY(100%);
+    }
+    66%{
+        transform: translateX(100%) translateY(100%);
+    }
+    100%{
+        background-color: green;
+        transform: translateX(100%);
+    }
+}
+ */ 
+ /* --------------------------- UNITS--------------------------------- */
+/* 
+ .box{
+ 
+    background-color: red;
+    /* padding: 10px; */
+    /* margin: 10px 0px 5px 0px;
+    padding: 10px;
+ } */
+
+ /* .percent{
+    height: 20vh;
+    width: 40vw;
+    border: 1 px solid black;
+ }
+
+
+ .parent{
+    margin-top: 10px;
+    border: 5px solid black;
+    width: 550px;
+ } */
+
+ /* ------------------------- Media Queries Em is best */
+ /* .vh{
+    width: 50vh;
+ }
+
+ .px{
+background-color: red;
+
+}
+.rem{
+background-color: blue;
+}
+.em{
+background-color: green;
+}
+div{
+   padding: 20px;
+}
+ @media only screen and (min-width:400px) {
+    .px{
+       opacity: 0.5;
+    }
+ }
+ @media only screen and (min-width:25em) {
+    .em{
+       opacity: 0.5;
+    }
+ }
+ @media only screen and (min-width:25rem) {
+    .rem{
+       opacity: 0.5;
+    } 
+ } */
+
+ /* -------------------------- GRID------------------- */
+
+.grid-container{
+   display: grid;
+   grid-template-columns: repeat(2,1fr) ;
+   gap: 1em;
+}
+
+ .grid-item{
+   padding: 2em;
+   border: 1px solid black;
+   width: 75%;
+
+ }
+ .grid-item-1{
+background-color: blue;
+ }
+ 
+ .grid-item-2{
+background-color: lightblue;
+ }
+ 
+ .grid-item-3{
+background-color: greenyellow;
+ }
+ .grid-item-4{
+background-color: pink;
+ }
